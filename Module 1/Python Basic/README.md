@@ -184,8 +184,14 @@ Before the next class, make sure you can tick all of these:
 
 ## 📂 Classes in This Section
 
-| Class | Topics | File |
+Open the files in the order shown below.
+
+| Class | Topics | Files |
 |---|---|---|
-| Class 1 | print(), Comments, Variables, input(), Variable Naming Rules | [Class 1/intro.py](Class%201/intro.py) |
+| **Class 1:** Introduction to Python | print(), Comments, Variables, input(), Variable Naming Rules | [intro.py](Class%201/intro.py) |
+| **Class 2:** Variables, Data Types & Type Casting | Case sensitivity, String concatenation, type() | [1. variables and types.py](Class%202/variables%20and%20types.py) |
+| | Data types: int, float, complex, str, bool, None | [2. data types.py](Class%202/data%20types.py) |
+| | Type casting: int(), float(), str(), bool() | [3. type casting.py](Class%202/type%20casting.py) |
+| **Class 3:** String Operations & Slicing | Multi-line strings, upper(), lower(), title(), islower(), isnumeric(), isalpha(), Indexing, Slicing [start:end:step], print(end=...) | [string operations.py](Class%203/string%20operations.py) |
 
 *(More classes will be added as the course progresses.)*
