@@ -36,3 +36,11 @@ print(type(salary))
 salary = bool(salary)
 print(type(salary))
 print(salary)
+
+
+attendance = 120
+print('Attendance Type:',type(attendance))
+print(str(attendance))
+
+attendance = str(attendance)
+print('Attendance Type:',type(attendance))
