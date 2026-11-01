@@ -154,6 +154,19 @@ This tells VS Code which Python to use.
 
 4. You should see the message in the **Terminal** at the bottom. 🎉
 
+### Step 5: Set Up Jupyter Notebooks *(needed from Class 6)*
+
+Some classes use **Jupyter Notebook** files (`.ipynb`), which let you run code one small cell at a time.
+
+1. In **Extensions** (`Ctrl + Shift + X`), search for **`Jupyter`** and install the one by **Microsoft**.
+2. In the terminal, run:
+   ```bash
+   pip install ipykernel
+   ```
+3. Open any `.ipynb` file, click **Select Kernel** (top-right) and choose your Python version.
+
+> 📓 For shortcuts and tips, read the **[Notebook Guide](Class%207/README.md)**.
+
 ---
 
 ## 🛠️ Troubleshooting
@@ -179,6 +192,7 @@ Before the next class, make sure you can tick all of these:
 - [ ] VS Code is installed
 - [ ] The **Python extension** by Microsoft is installed in VS Code
 - [ ] You ran `hello.py` and saw the output in the terminal
+- [ ] The **Jupyter extension** is installed and you can run a cell in a `.ipynb` file
 
 ---
 
@@ -193,5 +207,26 @@ Open the files in the order shown below.
 | | Data types: int, float, complex, str, bool, None | [2. data types.py](Class%202/data%20types.py) |
 | | Type casting: int(), float(), str(), bool() | [3. type casting.py](Class%202/type%20casting.py) |
 | **Class 3:** String Operations & Slicing | Multi-line strings, upper(), lower(), title(), islower(), isnumeric(), isalpha(), Indexing, Slicing [start:end:step], print(end=...) | [string operations.py](Class%203/string%20operations.py) |
+| **Class 4:** More Strings & Intro to Lists | String formatting, f-strings, Escape sequences (`\n` `\t` `\'` `\\` `\b`), find(), rfind(), split(), strip() | [1. strings more.py](Class%204/strings%20more.py) |
+| | Lists: string → list with replace() + split(), Indexing & slicing, append(), insert(), Changing items, pop(), remove() | [2. lists.py](Class%204/lists.py) |
+| **Class 5:** Lists (Continued) & Tuples | extend(), reverse(), clear(), sort(), Copying (`=` vs copy()), len() | [1. lists.py](Class%205/lists.py) |
+| | Tuples: Immutability, Indexing & slicing, Duplicates, "Adding" via list, Unpacking with `*` | [2. tuples.py](Class%205/tuples.py) |
+| **Class 6:** Dictionaries 📓 | Key : value pairs, Duplicate keys, len(), dict(), `[ ]` vs get(), keys(), values(), items(), update(), pop(), popitem(), del, clear(), copy() | [Dictinary.ipynb](Class%206/Dictinary.ipynb) |
+| **Class 7:** Dictionary Recap & Sets 📓 | Nested dictionaries, Adding / updating / removing, Shallow vs deep copy, Renaming a key | [1. dictionary recap.ipynb](Class%207/dictionary%20recap.ipynb) |
+| | Sets: Unordered & unique, Removing duplicates, add(), pop(), remove() | [2. sets.py](Class%207/sets.py) |
+| | 📓 How to use Jupyter Notebooks: use cases, shortcuts & tips | [Notebook Guide](Class%207/README.md) |
+
+📓 = uses Jupyter Notebooks (see [Step 5](#step-5-set-up-jupyter-notebooks-needed-from-class-6))
 
 *(More classes will be added as the course progresses.)*
+
+---
+
+## 🧺 Quick Reference: Python Collections
+
+| Type | Example | Ordered | Changeable | Duplicates | Learned in |
+|---|---|---|---|---|---|
+| **List** | `[1, 2, 3]` | ✅ | ✅ | ✅ | Class 4–5 |
+| **Tuple** | `(1, 2, 3)` | ✅ | ❌ | ✅ | Class 5 |
+| **Dictionary** | `{'a': 1}` | ✅ | ✅ | ❌ (keys) | Class 6–7 |
+| **Set** | `{1, 2, 3}` | ❌ | ✅ | ❌ | Class 7 |
