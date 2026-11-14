@@ -215,6 +215,9 @@ Open the files in the order shown below.
 | **Class 7:** Dictionary Recap & Sets 📓 | Nested dictionaries, Adding / updating / removing, Shallow vs deep copy, Renaming a key | [1. dictionary recap.ipynb](Class%207/dictionary%20recap.ipynb) |
 | | Sets: Unordered & unique, Removing duplicates, add(), pop(), remove() | [2. sets.py](Class%207/sets.py) |
 | | 📓 How to use Jupyter Notebooks: use cases, shortcuts & tips | [Notebook Guide](Class%207/README.md) |
+| **Class 8:** Conditional Statements 📓 | Comparison operators, if / elif / else (and why order matters), Short-hand if-else, Logical operators (and, or, not), ⭐ Operator precedence, Nested if | [conditional statements.ipynb](Class%208/conditional%20statements.ipynb) |
+| **Class 9:** Loops | While loop: Step-by-step trace, Countdown, Sum, break, continue, else, Infinite loops | [1. while loop.py](Class%209/while%20loop.py) |
+| | For loop: range(), Lists (3 ways incl. enumerate()), Strings, Dictionaries, break & continue, Nested loops, Star pattern | [2. for loop.py](Class%209/for%20loop.py) |
 
 📓 = uses Jupyter Notebooks (see [Step 5](#step-5-set-up-jupyter-notebooks-needed-from-class-6))
 
@@ -230,3 +233,18 @@ Open the files in the order shown below.
 | **Tuple** | `(1, 2, 3)` | ✅ | ❌ | ✅ | Class 5 |
 | **Dictionary** | `{'a': 1}` | ✅ | ✅ | ❌ (keys) | Class 6–7 |
 | **Set** | `{1, 2, 3}` | ❌ | ✅ | ❌ | Class 7 |
+
+## ⚖️ Quick Reference: Operator Precedence
+
+When a condition has many operators, Python runs them in this order (top = first):
+
+| Order | Operators |
+|---|---|
+| 1 | `( )` brackets |
+| 2 | Arithmetic: `*` `/` `%`, then `+` `-` |
+| 3 | Comparison: `>` `<` `==` `>=` `<=` `!=` |
+| 4 | `not` |
+| 5 | `and` |
+| 6 | `or` |
+
+> Example: `True or False and False` → `and` runs first → `True or False` → **`True`**. When in doubt, use brackets! (Details in [Class 8](Class%208/conditional%20statements.ipynb).)
