@@ -218,10 +218,32 @@ Open the files in the order shown below.
 | **Class 8:** Conditional Statements 📓 | Comparison operators, if / elif / else (and why order matters), Short-hand if-else, Logical operators (and, or, not), ⭐ Operator precedence, Nested if | [conditional statements.ipynb](Class%208/conditional%20statements.ipynb) |
 | **Class 9:** Loops | While loop: Step-by-step trace, Countdown, Sum, break, continue, else, Infinite loops | [1. while loop.py](Class%209/while%20loop.py) |
 | | For loop: range(), Lists (3 ways incl. enumerate()), Strings, Dictionaries, break & continue, Nested loops, Star pattern | [2. for loop.py](Class%209/for%20loop.py) |
+| **Class 10:** Functions | def & calling a function, Parameters vs arguments, Order of arguments, Keyword arguments, return, pass, Default arguments, `*args`, `**kwargs`, Scope (local vs global) | [functions.py](Class%2010/functions.py) |
+| **Class 11:** Advanced Functions, Iterators & Modules | Functions as values, Decorators (`@`), Decorators with `*args` / `**kwargs`, Lambda functions, Lambda with sorted() / map() / filter(), Functions that return functions, Recursion (countdown, factorial, Fibonacci) | [1. advance_functions.py](Class%2011/advance_functions.py) |
+| | Iterators: iter(), next(), StopIteration, How a for loop really works, Generators with `yield` | [2. iterators.py](Class%2011/iterators.py) |
+| | Modules: `import`, `import ... as`, `from ... import`, math & random, Making your own module, dir(), `if __name__ == '__main__'` | [3. modules.py](Class%2011/modules.py) + [my_tools.py](Class%2011/my_tools.py) |
+| **Class 12:** Dates, JSON & Exception Handling | datetime: now(), Date parts, Creating dates, strftime() format codes, strptime(), Date maths with timedelta | [1. date module.py](Class%2012/date%20module.py) |
+| | JSON: json.dumps(), json.loads(), Python ↔ JSON types, indent & sort_keys, Reading a real JSON file (Nobel Prize winners) with json.load() | [2. jsons.py](Class%2012/jsons.py) |
+| | 📓 Errors vs exceptions, try / except, Specific & multiple excepts, `as e`, else, finally, Nested try, Why SyntaxError can't be caught, raise | [3. exception handling.ipynb](Class%2012/exception%20handling.ipynb) |
+| **Class 13:** File Handling & Virtual Environments | open(), File modes (r, w, a, x, r+), `with`, read() / readline() / readlines(), strip(), write() / writelines(), os module (exists, remove, listdir), JSON files | [1. file handling.py](Class%2013/file%20handling.py) |
+| | Virtual environments: Why we need them, venv, activate / deactivate, pip, requirements.txt, VS Code interpreter, .gitignore | [2. Virtual Environments Guide](Class%2013/README.md) + [virtual envs.py](Class%2013/virtual%20envs.py) |
 
 📓 = uses Jupyter Notebooks (see [Step 5](#step-5-set-up-jupyter-notebooks-needed-from-class-6))
 
-*(More classes will be added as the course progresses.)*
+### 🎓 Module Complete!
+
+Congratulations! 🎉 You have completed **Module 1: Python Basics**. You now know:
+
+- ✅ Variables, data types, type casting and strings
+- ✅ Collections: lists, tuples, dictionaries and sets
+- ✅ Decisions with `if` / `elif` / `else` and repetition with `for` / `while` loops
+- ✅ Functions, decorators, lambdas, recursion, iterators and generators
+- ✅ Modules, plus the built-in `datetime`, `json`, `math`, `random` and `os` modules
+- ✅ Handling errors with `try` / `except`
+- ✅ Reading and writing files
+- ✅ Keeping projects clean with virtual environments and `pip`
+
+These are the building blocks for everything that comes next in **Agentic AI**. 🤖
 
 ---
 
@@ -248,3 +270,54 @@ When a condition has many operators, Python runs them in this order (top = first
 | 6 | `or` |
 
 > Example: `True or False and False` → `and` runs first → `True or False` → **`True`**. When in doubt, use brackets! (Details in [Class 8](Class%208/conditional%20statements.ipynb).)
+
+## 🧩 Quick Reference: Functions
+
+| Concept | Example | Learned in |
+|---|---|---|
+| Normal function | `def add(a, b): return a + b` | Class 10 |
+| Default argument | `def greet(name='Guest'): ...` | Class 10 |
+| Any number of arguments | `def total(*nums): ...` / `def info(**details): ...` | Class 10 |
+| Lambda | `square = lambda x: x * x` | Class 11 |
+| Decorator | `@my_decorator` above a `def` | Class 11 |
+| Recursion | A function that calls itself, with a **base case** to stop | Class 11 |
+| Generator | A function that uses `yield` instead of `return` | Class 11 |
+
+## 🚨 Quick Reference: Exception Handling
+
+```python
+try:
+    risky_code()            # code that might fail
+except ValueError as e:     # runs if THIS error happens
+    print(e)
+else:
+    ...                     # runs if there was NO error
+finally:
+    ...                     # ALWAYS runs
+```
+
+Details in [Class 12](Class%2012/exception%20handling.ipynb).
+
+## 📁 Quick Reference: File Modes
+
+| Mode | Meaning | If the file doesn't exist |
+|---|---|---|
+| `'r'` | Read (default) | ❌ Error |
+| `'w'` | Write: **erases** old content first | Creates it |
+| `'a'` | Append: adds to the end | Creates it |
+| `'x'` | Create a new file | Creates it (❌ error if it already exists) |
+| `'r+'` | Read and write | ❌ Error |
+
+> Always use `with open(path, mode, encoding='utf-8') as f:` so the file closes automatically. Details in [Class 13](Class%2013/file%20handling.py).
+
+## 🧪 Quick Reference: Virtual Environments (Windows)
+
+```bash
+python -m venv .venv               # 1. create (once per project)
+.venv\Scripts\activate             # 2. activate (every time)
+pip install requests               # 3. install packages
+pip freeze > requirements.txt      # 4. save the package list
+deactivate                         # 5. leave the venv
+```
+
+Full guide for Windows, macOS and Linux: [Class 13 Virtual Environments Guide](Class%2013/README.md).

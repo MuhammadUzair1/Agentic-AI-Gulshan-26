@@ -1,11 +1,10 @@
-The think tank of China’s People’s Liberation Army Rocket Force recently recruited 13 Chinese technicians
- from private companies, PLA Daily reported on Saturday.
-Zhang Hao and 12 other science and technology experts received letters of appointment at the founding ceremony of
-the PLA Rocket Force national defense science and technology experts panel, according to a report published by the
-PLA Daily on Saturday.
-Honored as “rocket force science and technology experts,” Zhang and his fellow experts from private companies will
-serve as members of the PLA Rocket Force think tank, which will conduct research into fields like overall design of
-the missiles, missile launching and network system technology for five years.
-The experts will enjoy the same treatment as their counterparts from State-owned firms, the report said.
-The PLA Daily said that this marks a new development in deepening military-civilian integration in China, which
-could make science and technology innovation better contribute to the enhancement of the force’s combat capabilities.I am adding linesI am adding linesI am adding linesI am adding linesI am adding linesI am adding linesI am adding linesI am adding linesI am adding linesI am adding linesI am adding linesI am adding linesI am adding linesI am adding linesI am adding linesI am adding linesI am adding linesI am adding linesI am adding linesI am adding lines
+Python was created by Guido van Rossum and first released in 1991.
+Python is famous for its simple and readable syntax.
+It is one of the most popular programming languages in the world.
+Python is used in web development, data science and automation.
+Artificial Intelligence and Machine Learning are mostly built with Python.
+Libraries like NumPy, Pandas and TensorFlow make Python very powerful.
+Many AI agents are also written in Python.
+Learning Python is the first step towards building Agentic AI.
+Practice every day and you will become a great programmer.
+Happy coding!

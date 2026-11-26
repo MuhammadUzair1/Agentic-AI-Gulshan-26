@@ -1,1 +1,14 @@
-SAB KHATAM
+My Python Notes
+===============
+1. Variables
+2. Loops
+3. Functions
+4. File Handling
+5. Virtual Environments
+
+Lines about AI from sample.txt:
+- Artificial Intelligence and Machine Learning are mostly built with Python.
+- Many AI agents are also written in Python.
+- Learning Python is the first step towards building Agentic AI.
+
+[26 Nov 2026, 03:43 PM] Today I learned file handling in Python!
